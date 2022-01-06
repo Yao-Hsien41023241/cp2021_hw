@@ -182,7 +182,7 @@ function doSave(storage_id, filename){
 <script src="https://mde.tw/cp2021/cmsimde/static/sylvester.js"></script>
 <script src="https://mde.tw/cp2021/cmsimde/static/PrairieDraw.js"></script>
 </p>
-<p><button id="add1to100">add 1 to 100</button><button id="p261">p261</button><button id="rocflag">ROC flag</button><button id="red">red</button><button id="red2">red2</button><button id="random">random</button></p>
+<p><button id="add1to100">add1to100</button><button id="p261">p261</button><button id="rocflag">ROC flag</button><button id="red">red</button><button id="red2">red2</button><button id="random">random</button><button id="final"> final</button></p>
 <p><!-- ######################  editor1 開始 ###################### --></p>
 <p><!-- 用來顯示程式碼的 editor 區域 --></p>
 <div id="kw_editor1" style="width: 600px; height: 300px;"></div>
@@ -263,10 +263,11 @@ class button2:
         Ace2.editor.scrollToRow(0)
         Ace2.editor.gotoLine(0)
         Ace2.run()
-
-add1to100_url = "https://gist.githubusercontent.com/mdecourse/0229a8a017091476a79700b8a190f185/raw/c48e37714f055c3a0027cbfef59e442a6ef659b9/from_1_add_to_100_1.py"
+################################## add1to100 start
+add1to100_url = "https://gist.githubusercontent.com/Yao-Hsien41023241/13bd0f765663ee9c2ca6aedb2f5b4b75/raw/beecdf3ba6ed09109f3e9e5febb752d88eb941f2/add1to100.py"
 add1to100 = button2(add1to100_url)
 doc["add1to100"].bind('click', add1to100.do)
+################################## add1to100 end
 ################################# p261 start 
 p261_url = "https://gist.githubusercontent.com/mdecourse/2f56974a40da7a218dbaef376a5b4ca4/raw/980606effcd29635307d6474718cd4a7ef016747/p261.py"
 p261 = button2(p261_url)
@@ -292,6 +293,11 @@ random_url = "https://gist.githubusercontent.com/Yao-Hsien41023241/9cd45f287593d
 random = button2(random_url)
 doc["random"].bind('click', random.do)
 ################################## random end
+################################# final start 
+final_url = "https://gist.githubusercontent.com/Yao-Hsien41023241/0e53cb603ad19f0c0a697390c649fa16/raw/3aca06b305bff68ad6f0412a11cc2b3c6a230bc7/final.py"
+final = button2(final_url)
+doc["final"].bind('click', final.do)
+################################## final end
 </script>
 </p><br />HW1 << <a href='HW1.html'>Previous</a> <a href='HW2.html'>Next</a> >> HW2</div>
         
